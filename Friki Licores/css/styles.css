@@ -4,6 +4,7 @@ body{
     background-color:rgb(253, 236, 234);
     min-height: 150vh;
     background-image: url(https://images.freeimages.com/images/large-previews/8d9/beer-2-1325424.jpg);
+    background-attachment: fixed;
 }
 .contenedor{
     width: 87%;
@@ -72,18 +73,6 @@ body{
     padding-right: 0;
     padding-top: 1%;
     padding-bottom: 1%;
-}
-.welcome{
-    text-align: center;
-    box-shadow: 0px 0px 50px rgba(182, 176, 176, 0.74);
-    width: 30%;
-    margin-left: 37%;
-    margin-top: 2%;
-    background-color:darkgray;
-    border-radius: 12px;
-    padding-left: 1%;
-    padding-right: 0;
-    padding-top: 1%;
 }
 #peva{
     width: 90%;
@@ -184,7 +173,6 @@ ul.navbar-nav{
 
 .profile-dropdown .dropdown-menu{
     background-color: whitesmoke;
-    border-radius: 19px;
     padding-bottom: 0;
     padding-top: 0;
     box-shadow: 0px 0px 20px rgba(182, 176, 176, 0.74);
@@ -283,8 +271,13 @@ html{
 }
 
 /* Contact */
-.fas fa-comment-dots fa-3x{
-    margin-top: 1%;
+.contact{
+    width: 27%;
+    margin: auto;
+    margin-top: 6%;
+    box-shadow: 0px 0px 50px rgba(194, 186, 186, 0.74);
+    border-radius: 15px;
+    background-color:white;
 }
 /* Responsive */
 @media screen and (max-width: 800px){
@@ -452,7 +445,44 @@ html{
         transition: all .3s;
         text-decoration: none;
     }
+    #logo{
+        width: 50%;
+    }
+    li.profile-dropdown{
+        color: black;
+        font-family: 'Raleway', sans-serif;
+    }
+    ul.navbar-nav{
+        color: black;
+        font-size: 17px;
+        border-radius: 12px;
+        font-family: 'Raleway', sans-serif;
+    }
+    #navbarNavDropdown ul li ul.dropdown-menu li{
+        font-family: 'Raleway', sans-serif;
+    }
+    #navbarNavDropdown ul li ul.dropdown-menu li:hover{
+        font-family: 'Raleway', sans-serif;
+        background-color: darkgray;
+    }
+    #navbarDropdownMenuLink{
+        color: black;
+    }
     
+    .profile-dropdown .dropdown-menu{
+        background-color: whitesmoke;
+        padding-bottom: 0;
+        padding-top: 0;
+        box-shadow: 0px 0px 20px rgba(182, 176, 176, 0.74);
+        width: 40%;
+    }
+    
+    .navbar{
+        position: fixed;
+        background-color: whitesmoke;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 8px;
+    }
     /* Imagenes de contenedores */
     .img{
         float: center;
@@ -536,57 +566,15 @@ html{
         margin-left: 1%;
     }
     
-    /* Indice */
-    .subnav {
-        float: left;
-        overflow: hidden;
-      }
-    
-      .subnav .subnavbtn {
-        font-size: 13px;  
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-      .navbar a:hover, .subnav:hover .subnavbtn {
-        border-radius: 12px;
-        color: black;
-      }
-    
-      .subnav-content {
-        display: none;
-        position: absolute;
-        left: 0;
-        background-color: mintcream;
-        border: black solid;
-        width: 25%;
-        z-index: 1;
-        border-radius: 18px;
-        margin-left: 5.5%;
-        margin-top: 0.1%;
-      }
-     
-    .subnav-content a {
-        float: left;
-        color: black;
-        text-decoration: none;
-        margin-left: 2%;
-        text-align: left;
-      }
-      
-      .subnav-content a:hover {
-        color: black;
-      }
-      
-      .subnav:hover .subnav-content {
-        display: block;
-      }
-    /* Fin indice */
-    
+    /* Contact */
+    .contact{
+        width: 57%;
+        margin: auto;
+        margin-top: 6%;
+        box-shadow: 0px 0px 50px rgba(194, 186, 186, 0.74);
+        border-radius: 15px;
+        background-color:white;
+    }
     /* Scroll */
     body::-webkit-scrollbar{
         width: 7px;
