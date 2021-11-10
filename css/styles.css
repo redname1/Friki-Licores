@@ -24,23 +24,25 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 #welcome {
-  margin-left: 20%;
-  padding-top: 10%;
+  margin: auto;
+  padding-top: 16%;
   text-align: center;
-  width: 60%;
-  color: #fff;
+  width: 100%;
+  color: rgb(253, 197, 192);
 }
 #welcome h1 {
-  text-shadow: 2px 2px black;
-  font-weight: 600;
+  text-shadow: 2px 2px rgb(249, 144, 133);
+  font-weight: 500;
+  font-size: 60px;
+}
+#welcome p {
+  font-weight: 400;
+  font-size: 40px;
 }
 
-#welcome p {
-  text-shadow: 2px 2px black;
-  font-weight: 400;
-}
 /* introduction */
 .introduccion {
   float: left;
@@ -195,41 +197,34 @@ ul.navbar-nav {
   padding-top: 0;
   box-shadow: 0px 0px 20px rgba(182, 176, 176, 0.74);
 }
+.dropdown-menu{
+  background-image: linear-gradient(
+    to bottom,
+    rgb(202, 108, 126) 78%,
+    rgb(192, 107, 138) 100%
+  );
+}
+.dropdown-menu .dropdown-item:hover{
+  background-image: linear-gradient(
+    rgb(255, 128, 119) 78%,
+    rgb(255, 133, 122) 100%,
+    rgb(255, 140, 127) 21%,
+    rgb(202, 108, 126) 78%,
+    rgb(192, 107, 138) 100%
+  );
+}
 
 .navbar {
-  background-color: whitesmoke;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 128, 119) 0%,
+    rgb(255, 133, 122) 0%,
+    rgb(255, 140, 127) 21%,
+    rgb(249, 144, 133) 52%,
+    rgb(202, 108, 126) 78%,
+    rgb(192, 107, 138) 100%
+  );
   font-family: "Raleway", sans-serif;
-}
-/* Animation subnav */
-.animate {
-  animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-}
-@keyframes slideDown {
-  0% {
-    transform: scaleY(0);
-    transform-origin: center top 0;
-  }
-  100% {
-    transform: scaleY(1);
-    transform-origin: center top 0;
-  }
-}
-@-webkit-keyframes slideDown {
-  0% {
-    transform: scaleY(0);
-    transform-origin: center top 0;
-  }
-  100% {
-    transform: scaleY(1);
-    transform-origin: center top 0;
-  }
-}
-.slideDown {
-  animation-name: slideDown;
-  -webkit-animation-name: slideDown;
 }
 
 /* Scroll */
@@ -297,28 +292,25 @@ body::-webkit-scrollbar-thumb {
 
   #blackcolor {
     text-align: center;
-    font-size: 30px; 
+    font-size: 30px;
     font-family: "Raleway", sans-serif;
     width: 100%;
     margin-left: 8%;
   }
   .welcome {
     text-align: center;
-    box-shadow: 0px 0px 50px rgba(182, 176, 176, 0.74);
-    width: 30%;
-    margin-left: 39%;
-    margin-top: 2%;
-    background-color: darkgray;
-    border-radius: 12px;
-    padding-left: 1%;
-    padding-right: 0;
-    padding-top: 1%;
+  }
+  #welcome h1{
+    font-size: 45px;
+  }
+  #welcome p{
+    font-size: 30px;
   }
   #logo {
     width: 50%;
   }
   .imge {
-    width: 100%; 
+    width: 100%;
     border-radius: 12px;
     margin-right: 0;
     margin-bottom: 5%;
@@ -334,9 +326,8 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     text-align: justify;
     font-size: 16px;
-
   }
-  .navbar-brand{
+  .navbar-brand {
     width: 75%;
   }
 
@@ -440,14 +431,6 @@ body::-webkit-scrollbar-thumb {
     color: white;
     transition: all 0.3s;
   }
-  #imagen-static {
-    position: fixed;
-    width: 5%;
-  }
-  #anime {
-    text-align: left;
-    margin-left: 6%;
-  }
   /* Footer */
 
   /* Contact */
@@ -458,24 +441,5 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 50px rgba(87, 32, 32, 0.74);
     border-radius: 15px;
     background-color: white;
-  }
-  /* Scroll */
-  body::-webkit-scrollbar {
-    width: 7px;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border-radius: 5px;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  #scroll-progress {
-    position: fixed;
-    top: 0;
-    width: 0%;
-    height: 4px;
-    background: orangered;
-    z-index: 10000;
   }
 }
